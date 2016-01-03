@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>左固定布局</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: flex;
+			height: 200px;
+		}
+		.left {
+			width: 200px;
+			background: red;
+		}
+		.right {
+			/*flex-grow使他占剩下的空间的全部*/
+			flex-grow: 1;
+			background: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item left"></div>
+		<div class="item right"></div>
+	</div>
+</body>
+</html>

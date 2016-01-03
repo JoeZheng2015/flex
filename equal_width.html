@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>项目等宽</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			list-style-type: none;
+			display: flex;
+		}
+		.item {
+			border: 1px solid black;
+			/*将flex-basis设为0，可以使得每个项目是另一个项目的精准倍数*/
+			flex: 1 0 0;
+		}
+		.item:nth-child(2) {
+			border-left: 0;
+			border-right: 0;
+		}
+	</style>
+</head>
+<body>
+	<ul class="container">
+		<li class="item">
+			<h1>第一列</h1>
+			<p>
+				You'll notice that even though this column has far more content in it, instead of the other columns ending early, they size themselves to meet the end of this column vertically.
+			</p>
+		</li>
+		<li class="item">
+			<h1>第二列</h1>
+			<p>This is a column with not much content.</p>
+		</li>
+		<li class="item">
+			<h1>第三列</h1>
+			<p>
+				Normally, the only way to achieve this would be either a hack, or to set all boxes to min-height.
+			</p>
+		</li>
+	</ul>
+</body>
+</html>

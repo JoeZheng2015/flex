@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圣杯布局</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: flex;
+			list-style-type: none;
+		}
+		.item {
+			height: 200px;
+		}
+		.left {
+			width: 100px;
+			background: red;
+		}
+		.middle {
+			flex-grow: 1;
+			background: green;
+		}
+		.right {
+			width: 100px;
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+	<ul class="container">
+		<li class="item left"></li>
+		<li class="item middle"></li>
+		<li class="item right"></li>
+	</ul>
+</body>
+</html>
