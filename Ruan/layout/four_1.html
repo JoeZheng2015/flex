@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4-1</title>
+    <link rel="stylesheet" href="./base.css">
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            /*主轴flex-end，使得项目4在6的位置*/
+            justify-content: flex-end;
+            /*调整伸缩行在侧轴上的对齐方式，使项目4在9的位置*/
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+    </ul>
+</body>
+</html>
